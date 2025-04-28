@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ver4</title>
+  <style>
+    body {
+      width: 100vw;
+      height: 100vh;
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet">
+  <script type="importmap">
+    {
+      "imports": {
+        "neco-components/": "/neco-components/scripts/neco-components/"
+      }
+    }
+  </script>
+  <script defer src="../assets/bundle.js"></script>
+  <script type="module">
+    import {TAG_NAME} from "./index.js"
+    const elem = document.createElement(TAG_NAME)
+    document.body.appendChild(elem)
+    window.addEventListener("load", () => document.body.style="visibilily:visible;")
+  </script>
+</head>
+<body style="visibility: hidden;">
+</body>
+</html>

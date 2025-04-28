@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>test</title>
+  <style>
+    body {
+      width: 100vw;
+      height: 100vh;
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+  <script>
+    window.addEventListener("load", () => document.body.style="visibilily:visible;" )
+  </script>
+  <script type="module">
+    import {TAG_NAME} from "./index.js"
+    const elem = document.createElement(TAG_NAME)
+    document.body.appendChild(elem)
+  </script>
+</head>
+<body style="visibility: hidden;"></body>
+</html>
