@@ -37,16 +37,10 @@ export const CustomElem = class extends HTMLElement {
   }
   connectedCallback() {
     console.log("connected callback of", TAG_NAME)
-    const internals = this.attachInternals()
-    const isShadow = internals.shadowRoot
-    if(isShadow) return
-    
     const shadow = this.attachShadow({mode: 'open'})
     const HTML = createHTML()
-    const content = this.innerHTML
-    const html = HTML + content 
-    shadow.setHTMLUnsafe(html)
-    this.shadow = shadow
+    shadow.setHTMLUnsafe(HTML)
+    this.shadow =  shadow
     this.initialize()
   }
   initialize(){
