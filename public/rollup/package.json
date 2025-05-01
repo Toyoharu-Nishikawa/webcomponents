@@ -1,0 +1,20 @@
+{
+  "name": "ver4",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@web/rollup-plugin-html": "^2.3.0",
+    "filereader": "^1.2.0",
+    "rollup": "^4.40.1",
+    "rollup-plugin-import-map": "^3.0.0"
+  }
+}
