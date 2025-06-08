@@ -1,0 +1,18 @@
+{
+  "name": "ver4",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "vite build"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "filereader": "^1.2.0",
+    "vite": "^6.3.4",
+    "vite-plugin-singlefile": "^2.2.0"
+  }
+}
